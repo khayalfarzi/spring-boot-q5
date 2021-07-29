@@ -1,0 +1,20 @@
+1) @RequestParameter +
+2) @PathVariable +
+3) @RequestBody +
+4) @RequestMapping +
+12) @RestController +
+13) @Controller +
+--------------------------
+8) What is Jakson? +
+1) What is ModelMapper -
+9) What is ObjectMapper +
+2) What is Lombok? +
+3) @Getter and @Setter +
+4)  @NoArgConstructor
+        @AllArgsConstructor
+        @RequiredArgConstructor +
+5) @Data +
+6) @Equals and @Hashcode +
+7) @ToString +
+10) @Builder +
+11) @PostConstructor +
