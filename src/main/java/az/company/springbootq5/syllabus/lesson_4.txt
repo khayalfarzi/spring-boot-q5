@@ -6,3 +6,18 @@
 6) Abstract Factory design pattern +
 7) Prototype design pattern +
 8) Singleton design pattern +
+1)  DAO (Data Access Object) DP
+2)  DTO (Data Transfer Object) DP +
+13) MVC (Model View and Controller) DP +
+9)  What is Spring Container +
+3)  Dependency Injection DP +
+4)  Inversion of Control DP +
+8)  What is EJB +
+(EJB - BEAN)
+stateful - prototype
+stateless - singleton
+singleton - --
+
+5)  What is @Bean +
+7)  What is Bean scopes +
+6)  What is @Autowired +
