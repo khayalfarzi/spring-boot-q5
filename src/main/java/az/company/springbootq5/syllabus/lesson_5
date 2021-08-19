@@ -1,4 +1,15 @@
+1) What is @Component
+2) What is @Configuration
+3) What is AutoConfiguration
 
-10) What is @Component
-11) What is @Configuration
-12) What is AutoConfiguration
+----- JPA ----
+
+4) JPA intro+
+5) JPA (application properties)+
+6) JPA and Hibernate +
+7) JPA structure and architecture+
+8) @Entity
+9) @Table
+10) @Id
+11) @GeneratedValue
+12) Spring data +
