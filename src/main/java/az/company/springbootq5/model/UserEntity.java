@@ -17,7 +17,7 @@ import java.util.List;
 @Table(name = "users", schema = "q5")
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class UserEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,6 +30,14 @@ public class User {
     @Enumerated(EnumType.STRING)
     @Column(name = "user_gender", length = 7)
     private Gender gender;
+
+    @OneToOne(targetEntity = Education.class,
+            fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL)
+    @JoinColumn(name = "education_id",
+            referencedColumnName = "education_id",
+            nullable = false)
+    private Education education;
 
     @OneToMany(fetch = FetchType.LAZY,
             cascade = CascadeType.ALL,

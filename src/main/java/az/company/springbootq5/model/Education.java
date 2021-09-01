@@ -1,37 +1,34 @@
 package az.company.springbootq5.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-@Data
+@Getter
+@Setter
 @Entity
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "product")
-public class Product {
+@Table(name = "education", schema = "q5")
+public class Education {
 
     @Id
-    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "education_id", nullable = false, unique = true)
+    private Integer id;
 
-    @Column(name = "name")
+    @OneToOne(mappedBy = "education")
+    private UserEntity user;
+
+    @Column(name = "education_name")
     private String name;
 
-    @Column(name = "price")
-    private BigDecimal price;
-
-    @ManyToOne
-    private UserEntity userEntity;
+    @Column(name = "education_level")
+    private int level;
 
     @CreationTimestamp
     @Column(name = "created_at")

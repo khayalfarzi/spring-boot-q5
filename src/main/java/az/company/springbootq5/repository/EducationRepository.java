@@ -1,0 +1,9 @@
+package az.company.springbootq5.repository;
+
+import az.company.springbootq5.model.Education;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EducationRepository extends JpaRepository<Education, Integer> {
+}
