@@ -1,7 +1,5 @@
 1) OTO +
 2) MTM +
-3) @Repository
-4) @Service
-5) CSR
-6) Rest template
-7) Feign client
+3) @Repository +
+4) @Service +
+5) CSR +
